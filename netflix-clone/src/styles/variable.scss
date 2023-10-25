@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "netflix-bold";
+  src: url("../assets//netflix-font/NetflixSans-Bold.woff2") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "netflix-regular";
+  src: url("../assets//netflix-font/NetflixSans-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "netflix-light";
+  src: url("../assets//netflix-font/NetflixSans-Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "netflix-medium";
+  src: url("../assets//netflix-font/NetflixSans-Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$mediumFont: "netflix-bold";
+$regularFont: "netflix-regular";
+$lightFont: "netflix-light";
+$boldFont: "netflix-medium";
+$red: rgb(229, 9, 20);
