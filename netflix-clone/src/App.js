@@ -1,9 +1,10 @@
+import Routing from "./Routing";
 import "./styles/App.scss";
 
 function App() {
   return (
     <div className="App">
-      <h1>Netflix clone</h1>
+      <Routing />
     </div>
   );
 }
