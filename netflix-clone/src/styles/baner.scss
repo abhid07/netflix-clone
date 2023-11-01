@@ -1,0 +1,143 @@
+@use "../styles/variable.scss" as v;
+.baner {
+  background-color: #000;
+  height: 56.25vw;
+  width: 100%;
+  z-index: 0;
+
+  .baner-img {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.7;
+    object-fit: contain;
+
+    img {
+      background-position: 50%;
+      background-size: cover;
+      bottom: 0;
+      left: 0;
+      opacity: 0.6;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  .fill-container {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    .info-container {
+      bottom: 65%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      left: 4%;
+      position: absolute;
+      top: 0;
+      width: 36%;
+      z-index: 10;
+      align-items: flex-start;
+
+      .logo {
+        opacity: 1;
+        max-height: 50%;
+        margin-bottom: 2rem;
+
+        h1 {
+          color: white;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          opacity: 1;
+        }
+      }
+      .overview {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
+        color: #fff;
+        font-size: 1.2vw;
+        font-weight: 400;
+        text-align: left;
+        letter-spacing: 0;
+        margin-bottom: 2rem;
+      }
+    }
+    .button-container {
+      display: flex;
+      width: 100%;
+      align-items: center;
+
+      button {
+        display: flex;
+        justify-content: center;
+        padding: 7px 18px 7px 16px;
+        cursor: pointer;
+        opacity: 1;
+        align-items: center;
+        font-weight: 600;
+        font-size: 1rem;
+        font-family: v.$regularFont;
+        border: 0;
+        border-radius: 3px;
+
+        .anticon {
+          font-size: 25px;
+        }
+      }
+
+      .play-btn {
+        background-color: white;
+        color: black;
+        margin-right: 1rem;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.75);
+        }
+      }
+
+      .moreinfo-btn {
+        background-color: rgba(109, 109, 110, 0.7);
+        color: white;
+
+        &:hover {
+          background-color: rgba(109, 109, 110, 0.4);
+        }
+
+        div {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .category {
+    position: absolute;
+    right: 0;
+    bottom: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: #fff;
+
+    span {
+      align-items: center;
+      background-color: rgba(51, 51, 51, 0.6);
+      border: 3px #dcdcdc;
+      border-left-style: solid;
+      box-sizing: border-box;
+      display: flex;
+      font-size: 1.1vw;
+      height: 2.4vw;
+      padding: 0.5vw 3.5vw 0.5vw 0.8vw;
+    }
+  }
+}
